@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble Board</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial,  sans-serif;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #333;
+            background-color: #2e7d32; 
+
+            text-align: center;
+            vertical-align: middle;
+            font-size: 10px;
+            color: white;
+        }
+
+        .tw {background-color: #c62828;}
+        .dw {background-color: #f06292;}
+        .tl {background-color: #6a1b9a;}
+        .dl {background-color: #1976d2;}
+        .center {background-color: black;}
+    </style>
+</head>
+<body>
+    
+    <h2>Scrabble Board</h2>
+
+    <table>
+        <tr>
+            <td class="tw">TW</td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tw">TW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td class="tw">TW</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td class="tw">TW</td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="center">&#9733;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td class="tw">TW</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tl">TL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dw">DW</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td class="tw">TW</td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tw">TW</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dl">DL</td>
+            <td></td>
+            <td></td>
+            <td class="tw">TW</td>
+        </tr>
+
+    </table>
+</body>
+</html>
